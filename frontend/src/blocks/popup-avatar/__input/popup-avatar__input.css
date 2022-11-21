@@ -1,0 +1,15 @@
+.popup-avatar__input {
+    border: solid rgba(0,0,0,.2);
+    border-width: 0 0 1px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 14px;
+    line-height: 17px;
+    margin-bottom: 48px;
+    margin-left: 36px;
+    min-width: 358px;
+    outline-color: #add8e6;
+    padding: 13px 0;
+    margin-top: 40.7px;
+}

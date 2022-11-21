@@ -1,0 +1,22 @@
+.body {
+  color: #FFFFFF;
+  background-color: black;
+  max-width: 1280px;
+  font-family: 'Inter', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width:901px) {
+  .body {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

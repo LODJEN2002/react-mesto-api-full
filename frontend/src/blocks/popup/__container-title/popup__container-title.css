@@ -1,0 +1,28 @@
+.popup__container-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  max-width: 330px;
+  margin-top: 34px;
+  margin-left: 36px;
+  text-align: justify;
+  height: 23px;
+}
+
+@media screen and (max-width:460px) {
+  .popup__container-title {
+    min-width: 85%;
+    font-size: 5.217391304vw;
+    margin-left: 22px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .popup__container-title {
+    min-width: 238px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+  }
+}

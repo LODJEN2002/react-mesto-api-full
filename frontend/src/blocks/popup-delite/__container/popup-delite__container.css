@@ -1,0 +1,7 @@
+.popup-delite__container {
+    width: 430px;
+    height: 181px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}

@@ -1,0 +1,207 @@
+@import "./vendor/normalize.css";
+@import "./vendor/fonts/inter.css";
+@import "./blocks/body/body.css";
+@import "./blocks/header/header.css";
+@import "./blocks/header/__logo/header__logo.css";
+/*================== Header ===================== */
+@import "./blocks/profile/profile.css";
+@import "./blocks/profile/__avatar/profile__avatar.css";
+@import "./blocks/profile/__info/profile__info.css";
+@import "./blocks/profile/__info-text-title/profile__info-text-title.css";
+@import "./blocks/profile/__info-text-subtitle/profile__info-text-subtitle.css";
+@import "./blocks/profile/__edit-button/profile__edit-button.css";
+@import "./blocks/profile/__add-button/profile__add-button.css";
+@import "./blocks/profile/__avatar-edit/profile__avatar-edit.css";
+
+/*================== Profile ===================== */
+@import "./blocks/elements/elements.css";
+@import "./blocks/elements/__element/elements__element.css";
+@import "./blocks/elements/__mask-group/elements__mask-group.css";
+@import "./blocks/elements/__group-white/elements__group-white.css";
+@import "./blocks/elements/__title/elements__title.css";
+@import "./blocks/elements/__group/elements__group.css";
+@import "./blocks/elements/__group/elements__group-like.css";
+@import "./blocks/elements/__trash/elements__trash.css";
+@import "./blocks/elements/__group-subtitle/elements__group-subtitle.css";
+@import "./blocks/elements/__number-like/element__number-like.css";
+
+
+/*================== Elements ===================== */
+@import "./blocks/footer/footer.css";
+@import "./blocks/footer/__mesto/footer__mesto.css";
+/*================== Footer ===================== */
+@import "./blocks/popup/popup.css";
+@import "./blocks/popup/popup-cards.css";
+@import "./blocks/popup-img/popup-img.css";
+@import "./blocks/popup/_opened/popup_opened.css";
+@import "./blocks/popup/__close-icon/popup__close-icon.css";
+@import "./blocks/popup/__container/popup__container.css";
+@import "./blocks/popup-cards/__container-plus/popup-cards__container-plus.css";
+@import "./blocks/popup-img/__container-img/popup-img__container-img.css";
+@import "./blocks/popup/__container-title/popup__container-title.css";
+@import "./blocks/popup-cards/__container-title/popup-cards__container-title.css";
+@import "./blocks/popup/__container-field-title/popup__container-field-title.css";
+@import "./blocks/popup-cards/__container-field-title-plus/popup-cards__container-field-title-plus.css";
+@import "./blocks/popup/__container-field-subtitle/popup__container-field-subtitle.css";
+@import "./blocks/popup-cards/__container-field-subtitle-plus/popup-cards__container-field-subtitle-plus.css";
+@import "./blocks/popup/__button/popup__button.css";
+@import "./blocks/popup/__button/popup__button-disabled.css";
+@import "./blocks/popup-img/__img-img/popup-img__img-img.css";
+@import "./blocks/popup-img/__text/popup-img__text.css";
+@import "./blocks/popup/__error/popup__error-hidden.css";
+@import "./blocks/popup/__error/popup__error_visible.css";
+@import "./blocks/popup/__input/popup__input_type_error.css";
+@import "./blocks/popup/__error/popup__error-subtitle.css";
+@import "./blocks/popup-delite/__container/popup-delite__container.css";
+@import "./blocks/popup-delite/__text/popup-delite__text.css";
+@import "./blocks/popup-delite/__button/popup-delite__button.css";
+@import "./blocks/popup-avatar/__container/popup-avatar__container.css";
+@import "./blocks/popup-avatar/__text/popup-avatar__text.css";
+@import "./blocks/popup-avatar/__input/popup-avatar__input.css";
+@import "./blocks/popup-avatar/__save-button/popup-avatar__save-button.css";
+
+/*================== Popup ===================== */
+html {
+    background-color: black;
+}
+
+.xx {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 60px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    height: 29px;
+    width: 358px;
+    border-radius: undefinedpx;
+}
+
+/* 
+.header__sign {
+    margin: 6px 0;
+    height: 22px;
+    width: 114px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+} */
+
+.form_reg {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_reg {
+    height: 14px;
+    width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    background-color: black;
+    padding: 5px;
+    color: #CCCCCC;
+    border-color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.button_reg {
+    margin-top: 216px;
+    height: 50px;
+    width: 358px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.button_reg:hover {
+    opacity: .85;
+    cursor: pointer;
+}
+
+.text_reg {
+    text-align: center;
+    height: 17px;
+
+}
+
+
+.link_reg {
+    margin-top: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link_reg:hover {
+    opacity: .6;
+}
+
+.header__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.header__link:hover {
+    opacity: .6;
+}
+
+.popup__img {
+    margin-top: 60px;
+    margin-left: 155px;
+
+}
+
+.popup__reg_text {
+    height: 58px;
+    width: 358px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    margin-top: 32px;
+}
+
+
+
+.header__mail {
+    height: 22px;
+    width: 141px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-right: 24px;
+
+}

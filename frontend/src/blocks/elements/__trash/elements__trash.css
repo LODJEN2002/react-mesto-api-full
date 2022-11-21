@@ -1,0 +1,23 @@
+.elements__trash-visible {
+  visibility: visible;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.elements__trash-visible:hover {
+  opacity: .6;
+}
+
+.elements__trash-hidden {
+  visibility: hidden;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.profile__info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 336px;
+}
+
+@media screen and (max-width:410px) {
+  .profile__info {
+    max-width: 282px;
+  }
+}

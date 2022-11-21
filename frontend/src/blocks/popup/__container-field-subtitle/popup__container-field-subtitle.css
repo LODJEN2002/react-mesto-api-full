@@ -1,0 +1,26 @@
+.popup__input_field_subtitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  min-width: 358px;
+  border: 0px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline-color: lightblue;
+  padding: 13px 0 13px 0;
+  height: 14px;
+  margin-left: 36px;
+  margin-bottom: 48.3px;
+}
+
+@media screen and (max-width:460px) {
+  .popup__input_field_subtitle {
+    min-width: 85%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .popup__input_field_subtitle {
+    min-width: 238px;
+  }
+}
