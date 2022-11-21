@@ -91,9 +91,9 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://api.domainname.students.nomoredomains.club/',
+    baseUrl: 'http://localhost:3000',
     headers: {
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzc5ZmM3NWFhODI2NTJjNzM5ZmEwYmYiLCJpYXQiOjE2Njg5Mzg4OTQsImV4cCI6MTY2OTU0MzY5NH0.j5D9t11lmV346hbRWZXBMK4MW0RcugQSeByeIecAULs',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdiYzg2MjI0N2RmZmE5MjU4YzU4MzYiLCJpYXQiOjE2NjkwNTY2MjAsImV4cCI6MTY2OTY2MTQyMH0.D2YWz8AyRDogAQFHrZ27oNIHn2wOJ8J8Aqn1AgM6I2k',
         'Content-Type': 'application/json'
     }
 });

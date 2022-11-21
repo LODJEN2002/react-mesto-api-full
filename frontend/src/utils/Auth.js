@@ -16,11 +16,13 @@ class Auth {
         return fetch(`${this._BASE_URL}/signin`, {
             method: 'POST',
             headers: {
+                'Accept': 'application/json',
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ password, email })
         })
             .then(this._checkRes)
+
     }
 
     register(password, email) {
@@ -28,7 +30,7 @@ class Auth {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
             body: JSON.stringify({ password, email })
         })
@@ -48,7 +50,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    BASE_URL: 'https://auth.nomoreparties.co'
+    BASE_URL: 'http://localhost:3000'
 });
 
 export default auth
