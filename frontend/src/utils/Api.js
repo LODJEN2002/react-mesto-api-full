@@ -91,7 +91,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://http://api.domainname.students.nomoredomains.club/',
     headers: {
         authorization: localStorage.getItem('token'),
         'Content-Type': 'application/json'
