@@ -50,7 +50,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    BASE_URL: 'https://api.domainname.students.nomoredomains.club'
+    BASE_URL: 'http://localhost:3000'
 });
 
 export default auth
