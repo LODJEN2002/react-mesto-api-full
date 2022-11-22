@@ -21,7 +21,6 @@ const allowedCors = [
   'http://localhost:3001',
   'https://mesto.lodjen.nomoredomains.club',
   'http://mesto.lodjen.nomoredomains.club',
-  'mesto.lodjen.nomoredomains.club',
 ];
 
 app.use((req, res, next) => {
@@ -46,6 +45,12 @@ app.use((req, res, next) => {
     return res.end();
   }
   return next();
+});
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
 });
 
 app.use(router);
