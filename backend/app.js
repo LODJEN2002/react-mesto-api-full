@@ -19,6 +19,7 @@ app.use(requestLogger);
 const allowedCors = [
   'http://localhost:3000',
   'http://localhost:3001',
+  'http://mesto.lodjen.nomoredomains.club',
 ];
 
 app.use((req, res, next) => {
