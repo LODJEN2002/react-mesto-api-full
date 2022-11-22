@@ -91,9 +91,9 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://158.160.37.170',
     headers: {
-        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdiYzg2MjI0N2RmZmE5MjU4YzU4MzYiLCJpYXQiOjE2NjkwNTY2MjAsImV4cCI6MTY2OTY2MTQyMH0.D2YWz8AyRDogAQFHrZ27oNIHn2wOJ8J8Aqn1AgM6I2k',
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjOGViNjFkMmIwYTkxNmQyZjc3MmQiLCJpYXQiOjE2NjkxMDgwNjAsImV4cCI6MTY2OTcxMjg2MH0.mu0vx39W5u080fApQCxxfl3REqX8L0yiXP1MnjwMXqg',
         'Content-Type': 'application/json'
     }
 });

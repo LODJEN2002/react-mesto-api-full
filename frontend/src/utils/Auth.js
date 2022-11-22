@@ -50,7 +50,7 @@ class Auth {
 }
 
 const auth = new Auth({
-    BASE_URL: 'http://localhost:3000'
+    BASE_URL: 'http://158.160.37.170'
 });
 
 export default auth

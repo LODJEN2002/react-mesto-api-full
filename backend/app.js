@@ -4,6 +4,7 @@ const { errors } = require('celebrate');
 const router = require('./routes/index');
 const centralErorr = require('./errors/centralError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+require('dotenv').config();
 
 const { PORT = 3000, MONGO_URL = 'mongodb://localhost:27017/mestodb' } = process.env;
 
