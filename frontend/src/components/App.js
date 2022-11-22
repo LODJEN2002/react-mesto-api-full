@@ -45,7 +45,9 @@ function App() {
 
     useEffect(() => {
         const token = localStorage.getItem('token')
+        console.log(token)
         if (token) {
+            console.log(token)
             auth.checkToken(token)
                 .then((res) => {
                     if (res) {
