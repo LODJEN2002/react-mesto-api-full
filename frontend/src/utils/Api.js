@@ -16,7 +16,10 @@ class Api {
     getInitialCards() {
         return fetch(`${this._baseUrl}/cards`, {
             method: 'GET',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
         })
             .then(this._checkRes)
     }
@@ -24,7 +27,10 @@ class Api {
     getProfileInfo() {
         return fetch(`${this._baseUrl}/users/me`, {
             method: 'GET',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
         })
             .then(this._checkRes)
     }
@@ -32,7 +38,10 @@ class Api {
     patchProfileInfo(name, job) {
         return fetch(`${this._baseUrl}/users/me`, {
             method: 'PATCH',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
                 name: name,
                 about: job,
@@ -44,7 +53,10 @@ class Api {
     addNewCard(dataTitle, dataSubtitle) {
         return fetch(`${this._baseUrl}/cards`, {
             method: 'POST',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
                 name: dataTitle,
                 link: dataSubtitle,
@@ -56,7 +68,10 @@ class Api {
     newAvatar(link) {
         return fetch(`${this._baseUrl}/users/me/avatar `, {
             method: 'PATCH',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
                 avatar: link,
             })
@@ -67,7 +82,10 @@ class Api {
     deliteCard(cardId) {
         return fetch(`${this._baseUrl}/cards/${cardId}`, {
             method: 'DELETE',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
         })
             .then(this._checkRes)
 
@@ -76,7 +94,10 @@ class Api {
     likeCard(cardId) {
         return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
             method: 'PUT',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
         })
             .then(this._checkRes)
     }
@@ -84,18 +105,17 @@ class Api {
     likeOffCard(cardId) {
         return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
             method: 'DELETE',
-            headers: this._headers,
+            headers: {
+                authorization: localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            },
         })
             .then(this._checkRes)
     }
 }
 
 const api = new Api({
-    baseUrl: 'http://http://api.domainname.students.nomoredomains.club/',
-    headers: {
-        authorization: localStorage.getItem('token'),
-        'Content-Type': 'application/json'
-    }
+    baseUrl: 'https://api.domainname.students.nomoredomains.club',
 });
 
 export default api

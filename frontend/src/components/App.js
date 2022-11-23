@@ -35,17 +35,9 @@ function App() {
     const [headerMail, setHeaderMail] = useState('')
 
     useEffect(() => {
-        api.getProfileInfo()
-            .then(res => {
-               setCurrentUser(res)
-            })
-            .catch(error => console.error(error))
-    }, [])
-
-
-    useEffect(() => {
         const token = localStorage.getItem('token')
         if (token) {
+            console.log(token)
             auth.checkToken(token)
                 .then((res) => {
                     if (res) {
@@ -56,18 +48,18 @@ function App() {
                 })
                 .catch(error => console.error(error)
                 )
-        }
-    }, [])
-
-    useEffect(() => {
+        api.getProfileInfo()
+            .then(res => {
+               setCurrentUser(res)
+            })
+            .catch(error => console.error(error))  
         api.getInitialCards()
             .then((res) => {
                 setCards(res)
             })
-            .catch(error => console.error(error))
-    }, [])
-
-
+            .catch(error => console.error(error))  
+        }
+    }, [loggedIn])
 
     function handleCardLike(card) {
         const isLiked = card.likes.some(i => i === currentUser._id);
